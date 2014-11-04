@@ -24,3 +24,6 @@ field number --fieldName id --type java.lang.Integer
 field string --fieldName name --notNull --sizeMin 2
 field number --fieldName studentId --type java.lang.Long
 field number --fieldName courseId --type java.lang.Long
+json all --deepSerialize
+web mvc json setup
+web mvc json all
