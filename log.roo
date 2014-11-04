@@ -1,0 +1,26 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-05 01:53:17
+project --topLevelPackage com.as.cert --projectName certification-schooling --java 6 --packaging WAR
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-05 01:53:18
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-05 01:53:29
+jpa setup --provider HIBERNATE --database mysql
+entity jpa --class ~.domain.Course --testAutomatically
+field string --fieldName name --sizeMin 2 --notNull --class ~.domain.Course
+field date --fieldName startDate --type java.util.Date
+field date --fieldName endDate --type java.util.Date
+field number --fieldName fee --type java.lang.Float
+entity jpa --class ~.domain.CourseCatalog --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+entity jpa --class ~.domain.CourseDetail --testAutomatically
+field string --fieldName name --notNull --sizeMin 2
+entity jpa --class ~.domain.Instructor --testAutomatically
+field string --fieldName name --notNull --sizeMin 2 --class ~.domain.Instructor
+field set --fieldName courses --type ~.domain.Course
+entity jpa --class ~.domain.Student --testAutomatically
+field string --fieldName name --notNull --sizeMin 2 --class ~.domain.Student
+field string --fieldName address --sizeMax 30
+field set --fieldName courses --type ~.domain.Course
+entity jpa --class ~.domain.CourseRegistration --testAutomatically
+field number --fieldName id --type java.lang.Integer
+field string --fieldName name --notNull --sizeMin 2
+field number --fieldName studentId --type java.lang.Long
+field number --fieldName courseId --type java.lang.Long
