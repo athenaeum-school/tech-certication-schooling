@@ -13,3 +13,5 @@ $ sudo port load MariaDB-server
 Extract the schema.sql
 
 $ mysqldump -u root -p --no-data spring > schema.sql
+
+after GENERATION type, recreated the database, integration test error is gone. schema is outdated at the moment.

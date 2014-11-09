@@ -73,3 +73,5 @@ field reference --fieldName username --type ~.domain.security.Principal
 field reference --fieldName roleId --type ~.domain.security.Authority
 web mvc scaffold --class ~.web.security.RoleMappingController --backingType ~.domain.security.AuthorityPrincipalAssignment --path /security/assignments
 // Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-09 02:29:37
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-10 00:33:53
+entity jpa --class ~.domain.Instructor --extends ~.domain.Person --testAutomatically

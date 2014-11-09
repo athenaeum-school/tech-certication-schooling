@@ -6,7 +6,7 @@
         <field:textarea field="password" id="c_com_as_cert_domain_security_Principal_password" required="true" z="vL7Sohjc2VHgcuDs/qBAY59H1bU="/>
         <field:checkbox field="enabled" id="c_com_as_cert_domain_security_Principal_enabled" z="iKFeECZZh4gHoAfZhjizlHBf1uQ="/>
         <field:select field="username" id="c_com_as_cert_domain_security_Principal_username" itemValue="id" items="${principals}" path="/security/users" z="7I9vmC6uqHIQ5JQb9LhFdIpH5Z0="/>
-        <field:select field="roleId" id="c_com_as_cert_domain_security_Principal_roleId" itemValue="id" items="${authoritys}" path="/authoritys" z="OTkaU32xemIzlnSx0eRQ0IXHM3g="/>
+        <field:select field="roleId" id="c_com_as_cert_domain_security_Principal_roleId" itemValue="id" items="${authoritys}" path="/security/roles" z="fQJpuKLdcaLjIFjpYn16L3yE40E="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_as_cert_domain_security_Principal" render="${not empty dependencies}" z="bZPcLt3YBIDEkuL+yTtGCR4pDeQ="/>
 </div>

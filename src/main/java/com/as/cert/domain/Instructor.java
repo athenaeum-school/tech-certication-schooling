@@ -10,11 +10,11 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooJpaActiveRecord
 public class Instructor extends Person {
-	
 	@NotNull
-	@Size(min = 9, max = 9)
+	@Size(min=9, max=9)
 	private String taxNumber;
 	
 	@NotNull
 	private boolean active;
+	
 }
