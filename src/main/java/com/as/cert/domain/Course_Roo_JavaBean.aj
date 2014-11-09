@@ -4,7 +4,10 @@
 package com.as.cert.domain;
 
 import com.as.cert.domain.Course;
+import com.as.cert.domain.Tag;
+import com.as.cert.domain.TrainingProgram;
 import java.util.Date;
+import java.util.Set;
 
 privileged aspect Course_Roo_JavaBean {
     
@@ -38,6 +41,22 @@ privileged aspect Course_Roo_JavaBean {
     
     public void Course.setFee(Float fee) {
         this.fee = fee;
+    }
+    
+    public TrainingProgram Course.getTrainingProgram() {
+        return this.trainingProgram;
+    }
+    
+    public void Course.setTrainingProgram(TrainingProgram trainingProgram) {
+        this.trainingProgram = trainingProgram;
+    }
+    
+    public Set<Tag> Course.getTags() {
+        return this.tags;
+    }
+    
+    public void Course.setTags(Set<Tag> tags) {
+        this.tags = tags;
     }
     
 }

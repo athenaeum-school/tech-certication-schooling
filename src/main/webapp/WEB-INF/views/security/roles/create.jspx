@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_as_cert_domain_security_Authority" modelAttribute="authority" path="/security/roles" render="${empty dependencies}" z="lHXXf7AHlHOkxEQszZ0Jq7uk6cw=">
+        <field:textarea field="authority" id="c_com_as_cert_domain_security_Authority_authority" required="true" validationRegex="^ROLE_[A-Z]*" z="/a1ouAuUebAbb0RRnAUn+zomtwE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_as_cert_domain_security_Authority" render="${not empty dependencies}" z="SAAggDBgvVkyalzwxM7/xtKIQSc="/>
+</div>

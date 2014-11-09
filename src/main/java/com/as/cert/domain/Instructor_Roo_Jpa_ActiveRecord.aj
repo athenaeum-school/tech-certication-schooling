@@ -5,22 +5,11 @@ package com.as.cert.domain;
 
 import com.as.cert.domain.Instructor;
 import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect Instructor_Roo_Jpa_ActiveRecord {
     
-    @PersistenceContext
-    transient EntityManager Instructor.entityManager;
-    
-    public static final List<String> Instructor.fieldNames4OrderClauseFilter = java.util.Arrays.asList("name", "courses");
-    
-    public static final EntityManager Instructor.entityManager() {
-        EntityManager em = new Instructor().entityManager;
-        if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
-        return em;
-    }
+    public static final List<String> Instructor.fieldNames4OrderClauseFilter = java.util.Arrays.asList("taxNumber", "active");
     
     public static long Instructor.countInstructors() {
         return entityManager().createQuery("SELECT COUNT(o) FROM Instructor o", Long.class).getSingleResult();
@@ -59,35 +48,6 @@ privileged aspect Instructor_Roo_Jpa_ActiveRecord {
             }
         }
         return entityManager().createQuery(jpaQuery, Instructor.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
-    }
-    
-    @Transactional
-    public void Instructor.persist() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.persist(this);
-    }
-    
-    @Transactional
-    public void Instructor.remove() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        if (this.entityManager.contains(this)) {
-            this.entityManager.remove(this);
-        } else {
-            Instructor attached = Instructor.findInstructor(this.id);
-            this.entityManager.remove(attached);
-        }
-    }
-    
-    @Transactional
-    public void Instructor.flush() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.flush();
-    }
-    
-    @Transactional
-    public void Instructor.clear() {
-        if (this.entityManager == null) this.entityManager = entityManager();
-        this.entityManager.clear();
     }
     
     @Transactional

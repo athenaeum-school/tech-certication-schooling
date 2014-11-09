@@ -92,7 +92,7 @@ privileged aspect InstructorIntegrationTest_Roo_IntegrationTest {
         obj = Instructor.findInstructor(id);
         boolean modified =  dod.modifyInstructor(obj);
         Integer currentVersion = obj.getVersion();
-        Instructor merged = obj.merge();
+        Instructor merged = (Instructor)obj.merge();
         obj.flush();
         Assert.assertEquals("Identifier of merged object not the same as identifier of original object", merged.getId(), id);
         Assert.assertTrue("Version for 'Instructor' failed to increment on merge and flush directive", (currentVersion != null && obj.getVersion() > currentVersion) || !modified);

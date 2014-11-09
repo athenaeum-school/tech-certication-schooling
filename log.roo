@@ -1,8 +1,13 @@
-// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-05 01:53:17
-project --topLevelPackage com.as.cert --projectName certification-schooling --java 6 --packaging WAR
-// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-05 01:53:18
-// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-05 01:53:29
-jpa setup --provider HIBERNATE --database mysql
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-08 22:57:32
+hint
+project --topLevelPackage com.as.cert
+jpa setup --provider HIBERNATE --database MYSQL
+entity jpa --class ~model.TrainingProgram --testAutomatically
+hint
+hint relationships
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-08 23:04:29
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-08 23:24:21
 entity jpa --class ~.domain.Course --testAutomatically
 field string --fieldName name --sizeMin 2 --notNull --class ~.domain.Course
 field date --fieldName startDate --type java.util.Date
@@ -24,3 +29,47 @@ field number --fieldName id --type java.lang.Integer
 field string --fieldName name --notNull --sizeMin 2
 field number --fieldName studentId --type java.lang.Long
 field number --fieldName courseId --type java.lang.Long
+// [failed] field set --fieldName courses --type ~.model.Course --cardinality ONE_TO_MANY --mappedBy trainingProgram
+focus --class ~.model.TrainingProgram
+// [failed] field set --fieldName courses --type ~.model.Course --cardinality ONE_TO_MANY --mappedBy trainingProgram
+field set --fieldName courses --type ~.domain.Course --cardinality ONE_TO_MANY --mappedBy trainingProgram
+focus --class ~.domain.Course
+field reference --fieldName traininProgram --type ~.domain.TrainingProgram --cardinality MANY_TO_ONE 
+quit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-08 23:32:08
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-08 23:33:50
+entity jpa --class ~domain.TrainingProgram --testAutomatically
+// [failed] field set --fieldName courses --type ~.domain.Course --cardinality ONE_TO_MANY --mappedBy trainingProgram
+focus --class ~.model.TrainingProgram
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-09 01:24:33
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-11-09 01:37:14
+security setup
+entity jpa --class ~.doman.security.Principal --table security_principals
+field string  --fieldName username --notNull --sizeMax 50 --sizeMin 3
+field string  --fieldName password --notNull --sizeMax 50 --sizeMin 3
+field boolean --fieldName enabled
+entity jpa --class ~.model.security.Authority
+entity jpa --class ~.model.security.Authority --table security_authorities
+field string --fieldName roleId --notNull --sizeMax 10 --sizeMin 8
+field string --fieldName authority --notNull --sizeMax 50 --sizeMin 8 --regexp ^ROLE_[A-Z]*
+entity jpa --class ~.model.security.AuthorityPrincipalAssignment --table security_role_assignments
+// [failed] field reference --fieldName username --type ~.model.security.Principal
+entity jpa --class ~.domain.security.Authority --table security_authorities
+field string --fieldName authority --notNull --sizeMax 50 --sizeMin 8 --regexp ^ROLE_[A-Z]*
+entity jpa --class ~.model.security.AuthorityPrincipalAssignment --table security_role_assignments
+// [failed] field reference --fieldName username --type ~.model.security.Principal
+// [failed] field reference --fieldName username --type ~.domain.security.Principal
+entity jpa --class ~.domain.security.Principal
+entity jpa --class ~.domain.security.Principal --table security_principals
+field string  --fieldName password --notNull --sizeMax 50 --sizeMin 3
+field boolean --fieldName enabled
+field reference --fieldName username --type ~.domain.security.Principal
+field reference --fieldName roleId --type ~.domain.security.Authority
+web mvc scaffold --class ~.web.security.UserController --backingType ~.domain.security.Principal --path /security/users
+web mvc scaffold --class ~.web.security.RoleController --backingType ~.domain.security.Authority --path /security/roles
+web mvc scaffold --class ~.web.security.RoleMappingController --backingType ~.domain.security.AuthorityPrincipalAssignment --path /security/assignments
+entity jpa --class ~.domain.security.AuthorityPrincipalAssignment --table security_role_assignments 
+field reference --fieldName username --type ~.domain.security.Principal
+field reference --fieldName roleId --type ~.domain.security.Authority
+web mvc scaffold --class ~.web.security.RoleMappingController --backingType ~.domain.security.AuthorityPrincipalAssignment --path /security/assignments
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-11-09 02:29:37

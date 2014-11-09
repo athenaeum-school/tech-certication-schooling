@@ -24,13 +24,103 @@ privileged aspect InstructorDataOnDemand_Roo_DataOnDemand {
     
     public Instructor InstructorDataOnDemand.getNewTransientInstructor(int index) {
         Instructor obj = new Instructor();
-        setName(obj, index);
+        setActive(obj, index);
+        setAddressLine1(obj, index);
+        setAddressLine2(obj, index);
+        setCity(obj, index);
+        setEmailAddress(obj, index);
+        setFirstName(obj, index);
+        setLastName(obj, index);
+        setMiddleNameOrInitial(obj, index);
+        setPostalCode(obj, index);
+        setStateCode(obj, index);
+        setTaxNumber(obj, index);
         return obj;
     }
     
-    public void InstructorDataOnDemand.setName(Instructor obj, int index) {
-        String name = "name_" + index;
-        obj.setName(name);
+    public void InstructorDataOnDemand.setActive(Instructor obj, int index) {
+        Boolean active = true;
+        obj.setActive(active);
+    }
+    
+    public void InstructorDataOnDemand.setAddressLine1(Instructor obj, int index) {
+        String addressLine1 = "addressLine1_" + index;
+        if (addressLine1.length() > 60) {
+            addressLine1 = addressLine1.substring(0, 60);
+        }
+        obj.setAddressLine1(addressLine1);
+    }
+    
+    public void InstructorDataOnDemand.setAddressLine2(Instructor obj, int index) {
+        String addressLine2 = "addressLine2_" + index;
+        if (addressLine2.length() > 60) {
+            addressLine2 = addressLine2.substring(0, 60);
+        }
+        obj.setAddressLine2(addressLine2);
+    }
+    
+    public void InstructorDataOnDemand.setCity(Instructor obj, int index) {
+        String city = "city_" + index;
+        if (city.length() > 40) {
+            city = city.substring(0, 40);
+        }
+        obj.setCity(city);
+    }
+    
+    public void InstructorDataOnDemand.setEmailAddress(Instructor obj, int index) {
+        String emailAddress = "foo" + index + "@bar.com";
+        if (emailAddress.length() > 80) {
+            emailAddress = emailAddress.substring(0, 80);
+        }
+        obj.setEmailAddress(emailAddress);
+    }
+    
+    public void InstructorDataOnDemand.setFirstName(Instructor obj, int index) {
+        String firstName = "firstName_" + index;
+        if (firstName.length() > 30) {
+            firstName = firstName.substring(0, 30);
+        }
+        obj.setFirstName(firstName);
+    }
+    
+    public void InstructorDataOnDemand.setLastName(Instructor obj, int index) {
+        String lastName = "lastName_" + index;
+        if (lastName.length() > 30) {
+            lastName = lastName.substring(0, 30);
+        }
+        obj.setLastName(lastName);
+    }
+    
+    public void InstructorDataOnDemand.setMiddleNameOrInitial(Instructor obj, int index) {
+        String middleNameOrInitial = "middleNameOrInitial_" + index;
+        if (middleNameOrInitial.length() > 30) {
+            middleNameOrInitial = middleNameOrInitial.substring(0, 30);
+        }
+        obj.setMiddleNameOrInitial(middleNameOrInitial);
+    }
+    
+    public void InstructorDataOnDemand.setPostalCode(Instructor obj, int index) {
+        String postalCode = "postalCo_" + index;
+        if (postalCode.length() > 10) {
+            postalCode = postalCode.substring(0, 10);
+        }
+        obj.setPostalCode(postalCode);
+    }
+    
+    public void InstructorDataOnDemand.setStateCode(Instructor obj, int index) {
+        String stateCode = "s" + index;
+        if (stateCode.length() > 2) {
+            stateCode = stateCode.substring(0, 2);
+        }
+        obj.setStateCode(stateCode);
+    }
+    
+    public void InstructorDataOnDemand.setTaxNumber(Instructor obj, int index) {
+        String taxNumber = "taxNumb_" + index;
+        if (taxNumber.length() > 9) {
+            taxNumber = taxNumber.substring(0, 9);
+        }
+        obj.setTaxNumber(taxNumber);
     }
     
     public Instructor InstructorDataOnDemand.getSpecificInstructor(int index) {

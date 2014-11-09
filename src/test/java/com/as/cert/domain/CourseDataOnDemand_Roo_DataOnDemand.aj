@@ -5,6 +5,7 @@ package com.as.cert.domain;
 
 import com.as.cert.domain.Course;
 import com.as.cert.domain.CourseDataOnDemand;
+import com.as.cert.domain.TrainingProgramDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -15,6 +16,7 @@ import java.util.List;
 import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 privileged aspect CourseDataOnDemand_Roo_DataOnDemand {
@@ -24,6 +26,9 @@ privileged aspect CourseDataOnDemand_Roo_DataOnDemand {
     private Random CourseDataOnDemand.rnd = new SecureRandom();
     
     private List<Course> CourseDataOnDemand.data;
+    
+    @Autowired
+    TrainingProgramDataOnDemand CourseDataOnDemand.trainingProgramDataOnDemand;
     
     public Course CourseDataOnDemand.getNewTransientCourse(int index) {
         Course obj = new Course();

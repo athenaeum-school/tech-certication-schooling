@@ -3,26 +3,24 @@
 
 package com.as.cert.domain;
 
-import com.as.cert.domain.Course;
 import com.as.cert.domain.Instructor;
-import java.util.Set;
 
 privileged aspect Instructor_Roo_JavaBean {
     
-    public String Instructor.getName() {
-        return this.name;
+    public String Instructor.getTaxNumber() {
+        return this.taxNumber;
     }
     
-    public void Instructor.setName(String name) {
-        this.name = name;
+    public void Instructor.setTaxNumber(String taxNumber) {
+        this.taxNumber = taxNumber;
     }
     
-    public Set<Course> Instructor.getCourses() {
-        return this.courses;
+    public boolean Instructor.isActive() {
+        return this.active;
     }
     
-    public void Instructor.setCourses(Set<Course> courses) {
-        this.courses = courses;
+    public void Instructor.setActive(boolean active) {
+        this.active = active;
     }
     
 }
