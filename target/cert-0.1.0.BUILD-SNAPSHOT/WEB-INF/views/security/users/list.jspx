@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_as_cert_domain_security_Principal" items="${principals}" z="6NkDEmJqpl2cX+84yerJBR3/6Lw=">
+        <table:table data="${principals}" id="l_com_as_cert_domain_security_Principal" path="/security/users" z="bbdaG8bEAuVQxcwJLzV7BC7EZgA=">
+            <table:column id="c_com_as_cert_domain_security_Principal_password" property="password" z="cGz7SPClrrm7CMReozdEh0fHSo4="/>
+            <table:column id="c_com_as_cert_domain_security_Principal_enabled" property="enabled" z="70NSEAZ+0NBk7LOMf2HGYL9ELyk="/>
+            <table:column id="c_com_as_cert_domain_security_Principal_username" property="username" z="8MxJYxu93LnnO9Q/02CdYE8F6hY="/>
+            <table:column id="c_com_as_cert_domain_security_Principal_roleId" property="roleId" z="l4AAfGTeghWJq07C2ySq4KRK62U="/>
+        </table:table>
+    </page:list>
+</div>

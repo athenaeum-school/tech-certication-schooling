@@ -1,0 +1,8 @@
+2014-11-10 00:15:24,729 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'instructor0_.address_line1' in 'field list'
+2014-11-10 00:15:24,735 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'instructor0_.address_line1' in 'field list'
+2014-11-10 00:15:24,740 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'instructor0_.address_line1' in 'field list'
+2014-11-10 00:15:24,750 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'instructor0_.address_line1' in 'field list'
+2014-11-10 00:15:24,766 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'instructor0_.address_line1' in 'field list'
+2014-11-10 00:15:24,770 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'instructor0_.address_line1' in 'field list'
+2014-11-10 00:15:24,775 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'instructor0_.address_line1' in 'field list'
+2014-11-10 00:15:24,781 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 'instructor0_.address_line1' in 'field list'

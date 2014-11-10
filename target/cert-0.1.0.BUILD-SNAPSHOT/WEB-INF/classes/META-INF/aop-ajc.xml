@@ -1,0 +1,62 @@
+<aspectj>
+<aspects>
+<aspect name="com.as.cert.domain.TrainingProgram_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.Tag_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.Course_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.security.AuthorityPrincipalAssignment_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.security.Authority_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.CourseCatalog_Roo_ToString"/>
+<aspect name="com.as.cert.domain.security.Principal_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.CourseCatalog_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.security.Authority_Roo_ToString"/>
+<aspect name="com.as.cert.domain.security.Principal_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.Tag_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.security.AuthorityPrincipalAssignment_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.Tag_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.CourseCatalog_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.web.security.UserController_Roo_Controller"/>
+<aspect name="com.as.cert.domain.security.Principal_Roo_ToString"/>
+<aspect name="com.as.cert.domain.CourseCatalog_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.security.Principal_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.Instructor_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.Instructor_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.security.AuthorityPrincipalAssignment_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.CourseRegistration_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.CourseRegistration_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.Instructor_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.CourseRegistration_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.security.AuthorityPrincipalAssignment_Roo_ToString"/>
+<aspect name="com.as.cert.domain.security.Principal_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.CourseDetail_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.Tag_Roo_ToString"/>
+<aspect name="com.as.cert.domain.Person_Roo_ToString"/>
+<aspect name="com.as.cert.domain.security.Authority_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.Instructor_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.Course_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseDetail_Roo_ToString"/>
+<aspect name="com.as.cert.domain.Course_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.Instructor_Roo_ToString"/>
+<aspect name="com.as.cert.domain.Course_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.security.Authority_Roo_JavaBean"/>
+<aspect name="com.as.cert.web.security.RoleController_Roo_Controller"/>
+<aspect name="com.as.cert.domain.TrainingProgram_Roo_ToString"/>
+<aspect name="com.as.cert.domain.Person_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.TrainingProgram_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.security.AuthorityPrincipalAssignment_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.Tag_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.CourseDetail_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseRegistration_Roo_ToString"/>
+<aspect name="com.as.cert.domain.CourseDetail_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.as.cert.domain.Person_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.security.Authority_Roo_Jpa_Entity"/>
+<aspect name="com.as.cert.domain.Course_Roo_ToString"/>
+<aspect name="com.as.cert.domain.Person_Roo_Configurable"/>
+<aspect name="com.as.cert.web.security.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.as.cert.domain.CourseDetail_Roo_JavaBean"/>
+<aspect name="com.as.cert.domain.TrainingProgram_Roo_Configurable"/>
+<aspect name="com.as.cert.web.security.RoleMappingController_Roo_Controller"/>
+<aspect name="com.as.cert.domain.CourseRegistration_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseCatalog_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

@@ -1,0 +1,29 @@
+<aspectj>
+<aspects>
+<aspect name="com.as.cert.domain.TrainingProgramIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.as.cert.domain.TrainingProgramDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.as.cert.domain.CourseRegistrationIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.as.cert.domain.TrainingProgramDataOnDemand_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.InstructorDataOnDemand_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseRegistrationDataOnDemand_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseIntegrationTest_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.InstructorIntegrationTest_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseCatalogDataOnDemand_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseCatalogIntegrationTest_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseDetailDataOnDemand_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseDetailIntegrationTest_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseDetailIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.as.cert.domain.InstructorDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.as.cert.domain.CourseDetailDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.as.cert.domain.CourseRegistrationIntegrationTest_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.InstructorIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.as.cert.domain.CourseDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.as.cert.domain.CourseCatalogDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="com.as.cert.domain.CourseDataOnDemand_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.as.cert.domain.CourseCatalogIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="com.as.cert.domain.TrainingProgramIntegrationTest_Roo_Configurable"/>
+<aspect name="com.as.cert.domain.CourseRegistrationDataOnDemand_Roo_DataOnDemand"/>
+</aspects>
+</aspectj>
+
