@@ -9,7 +9,8 @@ html(lang='ja')
     link(rel='stylesheet', href='styles/main.css')
     link(href="styles/bootstrap-responsive.min.css" rel="stylesheet")
  body
-    ."navbar navbar-fixed-top"
+    .navbar
+     .navbar-fixed-top
       .navbar-inner
         .container
           a
@@ -21,7 +22,8 @@ html(lang='ja')
           a
            .brand(href="index.html") アセナエウム・アカデミー
            .nav-collapse
-            ul.nav
+            ul
+             .nav
               li 
                a(href="index.html") Home
               li
@@ -31,3 +33,19 @@ html(lang='ja')
                a(href="products.html") 資格
               li
                a(href="about.html") About
+            ul
+             .nav
+              .pull-right
+              li
+               .dropdown
+                a(href="#")
+                 .dropdown-toggle(data-toggle="dropdown") Your Account
+                  b
+                   .caret
+                ul
+                 .dropdown-menu
+                  li
+                   a(href="#") Login
+                  li
+                   a(href="#") Profile
+
